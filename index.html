@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zero Gravity Astronaut</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="loader" id="loader">
+        <div class="spinner"></div>
+        <div class="loading-text" id="loading-text">Initializing Systems... (0%)</div>
+      </div>
+
+      <div class="ui-container">
+        <h1>OrbitOps</h1>
+        <p>Explore the space like never before using ML</p>
+      </div>
+
+      <div class="side-panel left">
+        <div class="block">
+          <div class="block-glow"></div>
+          <h3>NEO</h3>
+          <p>Near Earth Objects detection</p>
+        </div>
+        <div class="block">
+          <div class="block-glow"></div>
+          <h3>Astrospectra</h3>
+          <p>Analyzing light shifts from distant neutron stars.</p>
+        </div>
+        <div class="block">
+          <div class="block-glow"></div>
+          <h3>Meteor</h3>
+          <p>Incoming shower intensity: Moderate. No hull damage expected.</p>
+        </div>
+      </div>
+
+      <div class="side-panel right">
+        <div class="block about-guide">
+          <div class="block-glow"></div>
+          <h3>About & Guide</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur aspernatur, et ullam, ratione modi nisi eveniet harum magni est id, commodi dolores culpa exercitationem. Cupiditate soluta sed nostrum delectus! <br><br><strong>Guide:</strong> Move your cursor to navigate. Observe the subtle inertia and axial shifts.</p>
+        </div>
+      </div>
+
+      <div class="instructions" id="instructions-container">
+        MOVE YOUR MOUSE AROUND TO EXPLORE ZERO GRAVITY
+      </div>
+
+      <canvas id="three-canvas"></canvas>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
